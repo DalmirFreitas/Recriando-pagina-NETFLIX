@@ -1,0 +1,95 @@
+:root{
+    --vermelho:#E50914; 
+    --preta:#141414;
+}
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box ;
+}
+/*elementos base*/
+body{
+    background-color: var(--preta);
+    font-family: Arial, Helvetica, sans-serif, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.logo{
+    color: var(--vermelho);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    margin-left: 5px;
+
+}
+header nav a{
+    text-decoration: none;
+    color: #aaa ;
+    margin-right: 10px;
+}
+header nav a:hover{
+    color: #fff;
+}
+/*filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background:  url(/img/até\ o\ ultimo\ homem\ poster.jpg);
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;   
+
+}
+.filme-principal .descricao{
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+.titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.botao{
+    background-color: rgba(0,0,0,2);
+    border: none;
+    color: white;
+    margin-left: 15px;
+
+    padding: 15px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 1s ease all;
+}
+.botao:hover{
+    background-color: #aaa;
+    color:black ;
+}
+.botao i{
+    margin-right: 5px;
+}
+.container{
+    margin-left: 15px;
+}
+.filme-principal .container{
+    width: 70%;
+}
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+
+}
+
+.carrocel-filmes{
+    margin-top: 10px;
+}
